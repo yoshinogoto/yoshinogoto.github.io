@@ -1,0 +1,181 @@
+h1, h2, header, p, a {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0; 
+}
+
+body{
+	margin: 0;
+}
+
+.sidebar{
+	width: 25vw;
+	height: 100vh;
+	background-color: #157cfb;
+	position: fixed;
+	left: 0;
+}
+
+.fakeDiv{
+	width: 25vw;
+	height: 100vh;
+	float: left;
+}
+
+.sidebar__title{
+	margin-top: 60px;
+	margin-left: 30px;
+}
+
+.sidebar__title h1{
+	font-family: 'Fugue';
+	font-weight: normal;
+	font-size: 25px;
+	color: #f2f5f9;
+	margin-bottom: 17px;
+}
+
+.sidebar__title h2{
+	font-family: 'Calibre';
+	font-weight: 300;
+	font-size: 40px;
+	color: white;
+}
+
+.sidebar__description{
+	margin-top: 125px;
+	margin-left: 30px;
+}
+
+.sidebar__description h1{
+	font-family: 'Calibre';
+	font-size: 28px;
+	color: #f2f5f9;
+	font-weight: 500;
+}
+
+.sidebar__description ul{
+	text-decoration: none;
+	list-style: none;
+	padding: 0;
+}
+
+.sidebar__description ul li {
+	font-family: 'Calibre';
+	color: #f2f5f9;
+	font-weight: 300;
+	margin-bottom: 6px;
+	font-size: 22px;
+	line-height: 24px;
+	max-width: 90%;
+}
+
+.sidebar__links{
+	margin-left: 30px;
+	margin-top: 285px;
+}
+
+.sidebar__links a{
+	margin-right: 15px;
+	text-decoration: none;
+}
+
+.fa{
+	color: #eaeef2;
+	font-size: 30px !important;
+}
+
+.fa:hover{
+	color: white;
+}
+
+.projects{
+	float: left;
+	width: 73vw;
+}
+
+.projects__title{
+	margin: auto;
+	margin-top: 150px;
+	text-align: center;
+}
+
+.projects__title h1{
+	font-family: 'Calibre';
+	font-weight: 300;
+	color: #5b5f66;
+	font-size: 50px;
+}
+
+.projects__container{
+	width: 60vw;
+	margin: auto;
+	margin-top: 75px;
+}
+
+.project{
+	width: 50%;
+	display: inline-block;
+	height: 250px;
+	overflow: hidden;
+	margin: 0;
+	float: left;
+	transition: all .2s ease;
+}
+
+.project img{
+	max-height: 100%;
+	min-width: 100%;
+}
+
+.project:hover{
+	transform: scaleX(1.1) scaleY(1.1);
+	box-shadow: 5px 5px 15px #282828;
+}
+
+.content{
+	float: left;
+	width: 73vw;
+}
+
+.content__main{
+	margin: auto;
+	width: 70%;
+	height: 400px;
+	margin-top: 100px;
+}
+
+.content__main img{
+	min-width: 100%;
+	max-height: 100%;
+}
+
+.content__description{
+	margin: auto;
+}
+
+.content__description p{
+	color: #5b5f66;
+	font-family: 'Brandon Text';
+	font-size: 30px;
+	line-height: 30px;
+	width: 70%;
+	margin: auto;
+	margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+	.fakeDiv, .sidebar {
+		display: none;
+	}
+
+	.projects {
+		float: inherit;
+		width: 100vw;
+	}
+
+	.projects__title {
+		margin: 45px;
+	}
+}
